@@ -108,6 +108,7 @@ class Registration extends React.Component {
     });
 
     // AJAX registration
+    // You might want to change this API URL for testing
     fetch("https://jeafgilbert.com/registration_api/users/create.php", {
       method: 'POST',
       headers: {
