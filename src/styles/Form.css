@@ -1,0 +1,54 @@
+.form-control {
+  border-color: #9a76be;
+}
+.form-control:focus {
+  border-color: #b76fd9;
+  box-shadow: 0 0 0 0.2rem rgba(173, 87, 243, 0.25);
+}
+.form-control[type="text"],
+.form-control[type="email"],
+.form-control[type="password"] {
+  height: 50px;
+  padding: 25px 15px 10px 15px;
+  outline: none;
+}
+.floatingLabel {
+  position: absolute;
+  pointer-events: none;
+  left: 15px;
+  top: 13px;
+  transition: 0.1s ease all;
+  font-size: 16px;
+  color: #999;
+}
+input:focus ~ .floatingLabel,
+input:not(:focus) ~ .fixed {
+  top: 5px;
+  bottom: 10px;
+  left: 15px;
+  font-size: 11px;
+  opacity: 1;
+  color: #6200c0;
+}
+.custom-control-label::before {
+  border: 1px solid #aaa;
+}
+
+/* button styles */
+.btn-primary {
+  background-color: #6200c0;;
+}
+.btn-primary:hover {
+  background-color: #9040dc;
+}
+.btn-primary:active {
+  background-color: #4f019a !important;
+}
+
+/* override tooltip */
+.__react_component_tooltip {
+  position: absolute;
+  top: -35px !important;
+  left: auto !important;
+  right: 100px !important;
+}

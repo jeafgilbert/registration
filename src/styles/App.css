@@ -1,0 +1,93 @@
+/* Registration Styles */
+html,
+body,
+#root,
+.fullHeight {
+  height: 100%;
+}
+label > em {
+  font-size: 0.9em;
+  color: #999;
+}
+.fullWidth {
+  width: 100%;
+  box-sizing: border-box;
+}
+.relative {
+  position: relative;
+}
+.autoWidth {
+  width: auto;
+}
+.inline {
+  display: flex;
+}
+
+/* Registration Layout */
+.guestBox {
+  min-height: 500px;
+  text-align: left;
+}
+.content {
+  padding: 50px;
+  background: #f0f0f0;
+}
+.greyOverlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.65);
+}
+.footer {
+  padding: 30px 50px;
+  color: #fff;
+  background: #391b63;
+  text-align: center;
+}
+.login {
+  padding: 20px 50px;
+  background: #e0e0e0;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .content {
+    padding: 40px;
+  }
+  .footer,
+  .login {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .content {
+    padding: 35px;
+  }
+  .footer,
+  .login {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+@media (max-width: 600px) {
+  .content {
+    padding: 25px;
+  }
+  .footer, .login {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+@media (max-width: 480px) {
+  .content {
+    padding: 15px;
+  }
+  .footer,
+  .login {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
